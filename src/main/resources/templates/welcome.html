@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html lang="en">
 <head>
 
     <title>Product View</title>
@@ -10,9 +10,11 @@
 
 <div class="container">
     <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
-    <p>
-        Welcome <span sec:authentication="principal.username"></span>
-    </p>
+    <div class="row text-center">
+        <div class="text">
+            <h3><font  color="#00008b" face="Arial">Welcome to my application</font></h3>
+        </div>
+    </div>
 </div>
 </body>
 </html>
